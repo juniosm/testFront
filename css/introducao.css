@@ -1,0 +1,69 @@
+#introducao {
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.88) 30.42%,
+      rgba(0, 0, 0, 0.1) 55.18%,
+      rgba(0, 0, 0, 0) 73.96%
+    ),
+    url(../imagens/serena_williams.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.introducao {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.grid1 {
+  grid-column: 1;
+}
+
+.introducao img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.text-info {
+  margin-bottom: 50px;
+}
+.text-info span {
+  display: inlene-block;
+  padding-right: 36px;
+  border: 1px solid #000000;
+}
+
+.cor {
+  margin-bottom: 110px;
+  color: #000000;
+}
+
+.transparente {
+  margin-left: 27px;
+  background: transparent;
+  border-color: #ffffff;
+}
+
+.publi {
+  max-width: 370px;
+  padding-left: 46px;
+  border: 1px solid #000000;
+  position: relative;
+  text-decoration: solid;
+}
+
+.publi::before {
+  content: "";
+  background-image: url(../imagens/coração.svg);
+  width: 30px;
+  height: 27px;
+  position: absolute;
+  left: 0px;
+  top: 5px;
+}
