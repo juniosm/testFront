@@ -1,6 +1,45 @@
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 80px;
   margin-top: 90px;
   margin-bottom: 100px;
+}
+
+.about h2 {
+  margin-bottom: 45px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.about img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.titulo-about {
+  margin-bottom: 35px;
+}
+
+.about ul li {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.about ul li:nth-child(3) {
+  border-bottom: none;
+  margin-bottom: 25px;
+}
+
+.about li h3 {
+  font: 600 1.125rem/1.5 "Montserrat", sans-serif;
+  margin-bottom: 8px;
+}
+
+.about a {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.125rem;
+  padding: 16px 75px;
 }
