@@ -1,0 +1,57 @@
+.startups-bg {
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.startups {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.info-1,
+.info-2 {
+  display: grid;
+  justify-items: center;
+}
+
+.info-1 h2 {
+  margin-bottom: 20px;
+  justify-self: start;
+}
+
+.info-1 p {
+  margin-bottom: 92px;
+}
+
+.info-2 img {
+  margin-top: 80px;
+  margin-bottom: 92px;
+}
+.info-2 p {
+  margin-bottom: 64px;
+}
+
+.info-2 a {
+  background: #fff;
+  color: #000;
+  padding-left: 95px;
+  padding-right: 95px;
+  justify-self: start;
+}
+
+.galeria {
+  padding-bottom: 96px;
+}
+
+.galeria-item {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  flex: 1;
+  margin-bottom: 15px;
+  justify-content: center;
+}

@@ -1,0 +1,12 @@
+.parceiros {
+  display: flex;
+  padding-bottom: 100px;
+  padding-top: 100px;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.parceiros img {
+  margin: auto;
+  padding: 20px;
+}

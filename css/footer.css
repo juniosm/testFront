@@ -1,0 +1,54 @@
+#footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 2fr;
+  gap: 10px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+
+.footer h3 {
+  font: 600 1.125rem/1.5 "Montserrat", sans-serif;
+  margin-bottom: 12px;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.links {
+  margin-top: 30px;
+}
+
+.footer .imagem {
+  justify-self: end;
+}
+
+.footer .direitos {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  position: relative;
+}
+
+.footer .direitos::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  position: absolute;
+  top: -40px;
+}
+
+.footer .direitos .icons {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 32px;
+}

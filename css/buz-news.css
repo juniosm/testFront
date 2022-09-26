@@ -1,0 +1,30 @@
+.buz-news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 75px;
+}
+
+.buz-news h2 {
+  grid-column: 1 / -1;
+  margin-bottom: 40px;
+}
+
+.buz-news img {
+  margin-bottom: 20px;
+}
+
+.buz-news h3 {
+  font: 600 1.125rem/1.5 "Montserrat", sans-serif;
+  margin-bottom: 16px;
+}
+
+.buz-news p {
+  margin-bottom: 16px;
+}
+
+.buz-news a {
+  font: 600 1.125rem/1.5 "Montserrat", sans-serif;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+}
