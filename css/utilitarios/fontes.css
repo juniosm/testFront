@@ -38,3 +38,34 @@
 .font-x-l {
   font: 700 2rem/1.5 "Lora", sans-serif;
 }
+
+@media (max-width: 600px) {
+  .font-xxl-m {
+    font-size: 1.821rem;
+  }
+
+  .font-xxl-m span {
+    font-size: 1.821rem;
+  }
+
+  .font-xl-m {
+    font-size: 1.25rem;
+  }
+
+  .font-xl-m span {
+    font-size: 1.25rem;
+  }
+
+  .font-xxl-l {
+    font-size: 2rem;
+  }
+
+  .font-xxl-l,
+  .font-xl-l {
+    font-size: 2rem;
+  }
+
+  .font-x-l {
+    font-size: 1.375rem;
+  }
+}

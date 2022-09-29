@@ -31,6 +31,7 @@
 .footer .direitos {
   grid-column: 1 / -1;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-top: 60px;
@@ -51,4 +52,26 @@
   display: flex;
   flex-wrap: nowrap;
   gap: 32px;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .links {
+    grid-column: 1;
+    margin-top: 0;
+  }
+
+  .footer .imagem {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .footer .direitos p {
+    font-size: 0.875rem;
+    margin-bottom: 40px;
+  }
 }

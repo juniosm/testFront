@@ -1,8 +1,18 @@
 .tese-bg {
-  background: #000000;
-  box-shadow: inset 0 -500px #ffffff;
+  background: linear-gradient(to bottom, #000 40%, #fff 0%);
   padding-top: 35px;
   padding-bottom: 35px;
+  position: relative;
+}
+
+.tese-bg::before {
+  content: "";
+  width: 48px;
+  height: 87px;
+  background-image: url("../imagens/detailhes/details3.svg");
+  position: absolute;
+  right: 20px;
+  top: 42%;
 }
 
 .tese {
@@ -12,6 +22,7 @@
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .tese-grid {
@@ -35,4 +46,42 @@
 .tese-grid .tx2 {
   display: grid;
   justify-items: center;
+}
+
+@media (max-width: 1200px) {
+  .tese-bg::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+  }
+}
+
+@media (max-width: 800px) {
+  .tese-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tese h2 {
+    margin-bottom: 65px;
+  }
+
+  .tx2 img {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .tese-bg {
+    background: linear-gradient(to bottom, #000 30%, #fff 0%);
+  }
+}
+
+@media (max-width: 400px) {
+  .tese-bg {
+    background: linear-gradient(to bottom, #000 20%, #fff 0%);
+  }
+  .tese-grid {
+    gap: 16px;
+  }
 }

@@ -1,15 +1,33 @@
+#about {
+  background: url("../imagens/detailhes/details.svg") no-repeat center right
+    10px;
+}
+
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   margin-top: 90px;
   margin-bottom: 100px;
+  position: relative;
 }
 
 .about h2 {
   margin-bottom: 45px;
   text-align: right;
   text-transform: uppercase;
+  position: relative;
+}
+
+.about h2::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: url("../imagens/arrow-down-right.svg");
+  position: absolute;
+  top: 76px;
+  right: -10px;
+  transform: rotate(0);
 }
 
 .about img {
@@ -20,6 +38,7 @@
 
 .titulo-about {
   margin-bottom: 35px;
+  font-size: 1.625rem;
 }
 
 .about ul li {
@@ -42,4 +61,30 @@
   color: #ffffff;
   font-size: 1.125rem;
   padding: 16px 75px;
+}
+
+@media (max-width: 1200px) {
+  #about {
+    background: inherit;
+  }
+}
+
+@media (max-width: 800px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about h2::after {
+  transform: rotate(180deg);
+}
+
+.about .imagem {
+  grid-row: 3;
+}
+
+@media (max-width: 600px) {
+  .about a {
+    font-size: 0.875rem;
+  }
 }

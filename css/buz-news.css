@@ -1,3 +1,8 @@
+#buz-news {
+  background: url("../imagens/detailhes/details5.svg") no-repeat center right
+    20px;
+}
+
 .buz-news {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -27,4 +32,21 @@
   font: 600 1.125rem/1.5 "Montserrat", sans-serif;
   padding-bottom: 12px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.21);
+}
+
+@media (max-width: 1200px) {
+  #buz-news {
+    background: inherit;
+  }
+}
+
+@media (max-width: 600px) {
+  .buz-news {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .buz-news h2 {
+    margin-bottom: 0;
+  }
 }
