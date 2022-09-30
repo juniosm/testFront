@@ -12,6 +12,20 @@
   color: #ffffff;
   position: relative;
 }
+#introducao-bone {
+  background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.88) 30.42%,
+      rgba(0, 0, 0, 0.1) 55.18%,
+      rgba(0, 0, 0, 0) 73.96%
+    ),
+    url(../imagens/bonoVox.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  color: #ffffff;
+  position: relative;
+}
 
 #introducao::after {
   content: "";
@@ -45,6 +59,7 @@
 .text-info {
   margin-bottom: 50px;
 }
+
 .text-info span {
   display: inlene-block;
   padding-right: 36px;
@@ -93,7 +108,6 @@
 
   .cor,
   .transparente {
-    padding: 12px auto;
     width: 100%;
   }
 
